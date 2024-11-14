@@ -213,11 +213,15 @@ nav a{
     border-radius: 10px;
     z-index: -1;
 }
+
+
+
 .bio-text-wrap{
     position: absolute;
     top:19%;
-    left:15%;
+    left:40%; 
 }
+
 .hero .bio{
     position: absolute;
     /* z-index: 2; */
@@ -231,6 +235,7 @@ nav a{
 .hero .bio:hover{
     transform: scale(1.02);
 }
+
 .bio h1{
     text-align: center;
     margin-bottom: var(--bottom-margin);
@@ -252,10 +257,11 @@ nav a{
 }
 .more-about-me{
     margin-top: 370px;
-display: flex;
-justify-content: center;
-align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 .more-about-title{
     text-align: center;
     margin-top:5px;
@@ -267,6 +273,37 @@ align-items: center;
     margin-top:5px;
     color: inherit;
 }
+
+.about-container {
+    display: flex;
+}
+
+.about-card{
+    width:21vw;
+    height:8rem;
+    padding: 20px;
+    transition: all 150ms;
+    background-color: #fff;
+    border-radius: 0.875rem;
+    box-shadow:0 3px 10px var(--primary-shadow);
+    margin:10px;
+}
+
+.about-card:hover{
+    background-color: var(--primary-color);
+    transform: scale(1.05);
+    color:#fff;
+}
+.about-card p{
+    padding: 0.4rem;
+    margin-bottom: var(--bottom-margin);
+    font-weight: 100;
+    color:inherit;
+    /* line-height: 1.3rem; */
+    text-align: justify;
+    transition: all 150ms ;
+}
+
     
 .skills{
     max-width: 68vw;
@@ -331,7 +368,12 @@ align-items: center;
     height:25rem;
     padding: 20px;
     transition: all 150ms;
+    background-color: #fff;
+    border-radius: 0.875rem;
+    box-shadow:0 3px 10px var(--primary-shadow);
+    margin:10px;
 }
+
 .project-card:hover{
     background-color: var(--primary-color);
     transform: scale(1.05);
@@ -342,10 +384,9 @@ align-items: center;
     margin-bottom: var(--bottom-margin);
     font-weight: 100;
     color:inherit;
-    line-height: 1.3rem;
+    /* line-height: 1.3rem; */
     text-align: justify;
     transition: all 150ms ;
-
 }
 /* .project-card p:hover{
     color:#ecf0ff;
@@ -355,12 +396,7 @@ align-items: center;
     font-weight: 600;
     color:var(--heading-color);
 }
-.project-card{
-    background-color: #fff;
-    border-radius: 0.875rem;
-    box-shadow:0 3px 10px var(--primary-shadow);
-    margin:10px;
-}
+
 /* Project-section ended */
 #contact{
     text-align: center;
@@ -477,30 +513,7 @@ footer{
     nav .show{
         transform:translateX(0);
     }
-    .hero{
-        margin-top:-3.5rem;
-        flex-direction: column;
-        gap:3.5rem;   
-    }
-    .hero img{
-        
-        height:37.5rem;
-        width:100%;
-        border-radius: 5px;
-
-    }
-    .bio-text-wrap{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-left:5px;
-        width: 100%;
-        position: static;
-    }
-    .bio{
-        margin-top: 32rem;
-        width:100%;
-    }
+    
     .more-about{
         margin-top: 360px;
         padding:1rem 3.5rem;
