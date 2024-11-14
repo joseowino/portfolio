@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/app.css">
+
+    <title>Joseph Owino</title>
+</head>
+<body>
+    <header>
+        <nav id="heading" class="heading">
+            <ul class="main-icon">
+             <li><img src="views/profilePic.png" alt="" class="icon-pic"></li>
+            <li>
+                <div class="attribute">
+                    <h1>Joseph Owino</h1>
+                    <!-- <h6 class="attributes">Quick Learner | Problem Solver</h6> -->
+                </div>
+            </li>
+            </ul>
+            <ul class="navigation" id="navigation">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contactMe" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="burger-menu" id="burger-menu">
+                <ion-icon class="bars" name="menu-outline"><span class="drop-down"><img src="views/icons8-drop-down-menu-36.png" alt=""></span></ion-icon>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero section -->
+        <section class="hero">
+            <div class="bio-text-wrap">
+                <div class="bio">
+                    <h1 class="bio-title">Hi, I'm Joseph Owino</h1>
+                    <p class="bio-text">A passionate developer from Kenya, with expertise in Go, JavaScript, and web development. I love solving problems and building meaningful projects.</p>
+                    <a href="#contactMe" class="cta-button">Contact Me</a>
+                </div>
+            </div>
+        </section>        
+
+        <!-- More about me section -->
+        <section class="more-about-me" id="about">
+            <div class="inner-wrap">
+                <h2 class="more-about-title">About Me</h2>
+                <div class="projects-container">
+                    <div class="project-card">
+                        <h3 class="more-about-title-small">Education:</h3>
+                        <p>Apprentice <br>Zone 01 Kisumu</p>
+                    </div>
+                    <div class="project-card">
+                        <h3 class="more-about-title-small">Experience:</h3>
+                        <p>1+ Years<br>Apprentice Developer</p>
+ 
+            </div>
+        </section>
+
+        </div>
+        </section>
+        
+        <section class="skills" id="skills">
+            <h2 class="skills-header">My Top Skills</h2>
+            <div class="skills-wrapper">
+                <div class="first-set">
+                    <img src="views/goIcon.png" alt="" class="skills-card" >
+                      <img src="views/jsIcon.png" alt="" class="skills-card">
+                </div>
+               
+        </section>
+        <!-- PROJECT SECTION -->
+        <section class="projects" id="projects">
+            <h2 class="projects-title">Some of my Recent Projects</h2>
+            <div>
+           <div class="projects-container">
+                <div class="project-card">
+                    <img src="views/groupieIcon.jpg" alt="" class="project-pic">
+                    <h3 class="project-title">Groupie Tracker</h3>
+                    <p class="project-details">Groupie Trackers consists on receiving a given API and manipulate the data contained in it, in order to create a site, displaying the information.</p>
+                </div>
+             
+                <div class="project-card">
+                    <img src="views/asciiArtIcon.jpeg" alt="" class="project-pic">
+                    <h3 class="project-title">Ascii-art</h3>
+                    <p class="project-details">Ascii-art is a program which consists in outputting a string in a graphic representation using ASCII.</p>
+                </div>
+               
+                
+                <div class="project-card">
+                    <img src="views/tictac.png" alt="" class="project-pic">
+                    <h3 class="project-title">TicTacToe</h3>
+                    <p class="project-details">A two player game, a game played since 1300BC, early variation found in roman empire, around the first century BC. It's name tic tac toe, believed to be derived from the sound the pencil made when it hit the slate.</p>
+                </div>
+
+            </div>
+
+        </section>
+        <!-- Project section ENDED -->
+        <section class="contact" id="contactMe">
+            <h2>Email me</h2>
+            <div class="contact-form-container">
+                <div class="contact-form">
+                    <form action="#" method="POST">
+                        <div class="form-control">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="senderName" placeholder="Enter Your Name" class="input-field" required>
+                        </div>
+                        <div class="form-control">
+                            <label for="email">Email</label>
+                            <input type="email" id="email"
+                            name="senderEmail" placeholder="Enter Your Email" class="input-field" required>
+                        </div>
+                        <div class="form-control">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" cols="60" rows="10" placeholder="Enter Your Message" class="input-field" required></textarea>
+                        </div>
+                        <button id="submit-btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- Contact SECTION ENDED -->
+        
+        <div class="socials" id="socials">
+            <a href="https://x.com/JosephOwin37679" target="_blank" id="twitter">
+                <img src="assets/twitter.gif" alt="">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="assets/insta.gif" alt="">
+              <a href="https://github.com/JoeOwino" target="_blank">
+                <img src="assets/git.gif" alt="">
+            </a>
+            <a href="https://www.linkedin.com/in/joseph-owino-69820a296/" target="_blank">
+                <img src="assets/link.gif" alt="">
+            </a>
+        </div>
+        <!-- SOCIALS SECTION ENDED -->
+    </main>
+    <footer>
+        <p class="copy">&copy; Copyright 2024</p>
+        <p class="copy">
+            Built with &#x2661; by <a href="#">Joseph Owino</a>
+        </p>
+        <i class="scroll-up" id="scroll-up">
+            <img src="assets/upArrow.gif" alt="scroll-up" class="socicon up-arrow">
+        </i>
+    </footer>
+    <script src="assets/app.js"></script>
+</body>
+</html>
