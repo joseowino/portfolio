@@ -1,20 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 
-/* ========== VARIABLES ========== */
+/* ===== VARIABLES ===== */
 :root {
   --font: "Inter", sans-serif;
-  --bg: #f7f9fc;
-  --card-bg: #ffffff;
-  --text: #222;
-  --muted: #555;
-  --primary: #2a4b8d;
-  --accent: #3f6ae0;
-  --shadow: rgba(0, 0, 0, 0.08);
+
+  /* Professional palette */
+  --bg: #0f172a; /* Deep navy background */
+  --card-bg: #1e293b; /* Slate container */
+  --text: #e2e8f0; /* Light gray text */
+  --muted: #94a3b8; /* Muted gray-blue */
+  --primary: #7dd3fc; /* Soft cyan highlight */
+  --accent: #38bdf8; /* Bright cyan accent */
+  --accent-dark: #0284c7; /* Rich deep blue accent */
+
+  --shadow: rgba(0, 0, 0, 0.25);
   --radius: 0.75rem;
   --transition: all 0.3s ease;
 }
 
-/* ========== RESET & BASE ========== */
+/* ===== RESET & BASE ===== */
 * {
   margin: 0;
   padding: 0;
@@ -48,18 +52,20 @@ a:hover {
   margin: 0 auto;
 }
 
-/* ========== NAVBAR ========== */
+/* ===== NAVBAR ===== */
 nav {
   position: fixed;
   top: 0;
   width: 100%;
-  background: var(--card-bg);
+  background: rgba(15, 23, 42, 0.95);
+  backdrop-filter: blur(12px);
   box-shadow: 0 2px 10px var(--shadow);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
   z-index: 999;
+  border-bottom: 1px solid #1e293b;
 }
 
 .nav-brand {
@@ -72,11 +78,12 @@ nav {
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
+  border: 2px solid var(--accent);
 }
 
 .brand-name {
   font-weight: 700;
-  color: var(--primary);
+  color: var(--accent);
 }
 
 .navigation {
@@ -87,8 +94,9 @@ nav {
   list-style: none;
 }
 .nav-link {
-  color: var(--primary);
+  color: var(--text);
   font-weight: 500;
+  letter-spacing: 0.3px;
 }
 .nav-link:hover {
   color: var(--accent);
@@ -99,55 +107,57 @@ nav {
   background: none;
   border: none;
   font-size: 1.8rem;
+  color: var(--accent);
   cursor: pointer;
 }
 
-/* ========== HERO SECTION ========== */
+/* ===== HERO ===== */
 .hero {
-  height: 90vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: linear-gradient(135deg, #eaf0ff, #ffffff);
+  background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%);
   padding: 2rem;
 }
 .hero-content {
   max-width: 700px;
 }
 .hero-greeting {
-  font-size: 2rem;
+  font-size: 2.4rem;
   font-weight: 700;
-  color: var(--primary);
+  color: var(--accent);
 }
 .hero-subtitle {
-  margin-top: 1rem;
-  font-size: 1.05rem;
+  margin-top: 1.2rem;
+  font-size: 1.1rem;
   color: var(--muted);
 }
 .btn-primary {
   display: inline-block;
-  margin-top: 1.8rem;
-  padding: 0.8rem 1.6rem;
+  margin-top: 2rem;
+  padding: 0.9rem 1.8rem;
   background-color: var(--accent);
-  color: #fff;
+  color: #0f172a;
   border-radius: var(--radius);
   font-weight: 600;
   transition: var(--transition);
 }
 .btn-primary:hover {
   background-color: var(--primary);
+  transform: translateY(-2px);
 }
 
-/* ========== ABOUT SECTION ========== */
+/* ===== ABOUT ===== */
 .about {
   padding: 6rem 0 3rem;
-  background-color: var(--bg);
+  background-color: #1e293b;
   text-align: center;
 }
 .about h2 {
   font-size: 1.8rem;
-  color: var(--primary);
+  color: var(--accent);
   margin-bottom: 1rem;
 }
 .about p {
@@ -157,23 +167,24 @@ nav {
   font-size: 1rem;
 }
 
-/* ========== EXPERTISE SECTION ========== */
+/* ===== EXPERTISE ===== */
 .expertise {
   padding: 5rem 0;
   text-align: center;
+  background-color: #0f172a;
 }
 .expertise h2 {
   font-size: 1.8rem;
-  color: var(--primary);
+  color: var(--accent);
   margin-bottom: 2rem;
 }
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
 }
 .skill-card {
-  background: var(--card-bg);
+  background: #1e293b;
   padding: 1.5rem;
   border-radius: var(--radius);
   box-shadow: 0 2px 10px var(--shadow);
@@ -182,43 +193,43 @@ nav {
 }
 .skill-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 4px 15px var(--shadow);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 .skill-card h3 {
   color: var(--accent);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.6rem;
 }
 .skill-card p {
   color: var(--muted);
   font-size: 0.95rem;
 }
 
-/* ========== PROJECTS SECTION ========== */
+/* ===== PROJECTS ===== */
 .projects {
-  background: #f0f3ff;
+  background: #111827;
   padding: 5rem 0;
   text-align: center;
 }
 .projects h2 {
   font-size: 1.8rem;
-  color: var(--primary);
+  color: var(--accent);
   margin-bottom: 2rem;
 }
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
 }
 .project-card {
-  background: var(--card-bg);
+  background: #1e293b;
   border-radius: var(--radius);
   box-shadow: 0 3px 12px var(--shadow);
-  padding: 1.2rem;
+  padding: 1.4rem;
   transition: var(--transition);
 }
 .project-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 20px var(--shadow);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4);
 }
 .project-img {
   height: 180px;
@@ -233,30 +244,32 @@ nav {
 .project-card p {
   color: var(--muted);
   font-size: 0.95rem;
-  margin: 0.5rem 0 1rem;
+  margin: 0.6rem 0 1rem;
 }
 .project-link {
   display: inline-block;
-  color: #fff;
+  color: #0f172a;
   background-color: var(--accent);
-  padding: 0.5rem 1rem;
+  padding: 0.6rem 1rem;
   border-radius: var(--radius);
-  font-weight: 500;
+  font-weight: 600;
+  transition: var(--transition);
 }
 .project-link:hover {
   background-color: var(--primary);
+  color: #0f172a;
 }
 
-/* ========== WRITING SECTION ========== */
+/* ===== WRITING ===== */
 .writing {
-  background: var(--card-bg);
+  background: #0f172a;
   padding: 5rem 0;
   text-align: center;
 }
 .writing h2 {
   font-size: 1.8rem;
-  color: var(--primary);
-  margin-bottom: 1.5rem;
+  color: var(--accent);
+  margin-bottom: 2rem;
 }
 .article-list {
   list-style: none;
@@ -268,30 +281,30 @@ nav {
   margin: 1rem 0;
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid #e2e8f5;
+  border-bottom: 1px solid #334155;
   padding-bottom: 0.5rem;
 }
 .article-list a {
-  color: var(--accent);
+  color: var(--primary);
   font-weight: 500;
 }
 .article-list a:hover {
-  color: var(--primary);
+  color: var(--accent);
 }
 .article-date {
   color: var(--muted);
   font-size: 0.85rem;
 }
 
-/* ========== CONTACT SECTION ========== */
+/* ===== CONTACT ===== */
 .contact {
-  background-color: var(--bg);
+  background-color: #1e293b;
   padding: 5rem 0;
   text-align: center;
 }
 .contact h2 {
   font-size: 1.8rem;
-  color: var(--primary);
+  color: var(--accent);
   margin-bottom: 1rem;
 }
 .contact p {
@@ -300,7 +313,7 @@ nav {
   margin: 0 auto 2rem;
 }
 .contact-form {
-  background: var(--card-bg);
+  background: #0f172a;
   max-width: 500px;
   margin: 0 auto;
   padding: 2rem;
@@ -308,22 +321,20 @@ nav {
   box-shadow: 0 3px 10px var(--shadow);
   text-align: left;
 }
-.form-group {
-  margin-bottom: 1rem;
-}
 label {
-  color: var(--primary);
+  color: var(--accent);
   font-weight: 500;
 }
 input,
 textarea {
   width: 100%;
   padding: 0.7rem;
-  border: 2px solid #d5dcfa;
+  background: #1e293b;
+  border: 1.5px solid #334155;
   border-radius: var(--radius);
+  color: var(--text);
   outline: none;
   transition: var(--transition);
-  font-family: var(--font);
 }
 input:focus,
 textarea:focus {
@@ -331,9 +342,9 @@ textarea:focus {
 }
 button[type="submit"] {
   width: 100%;
-  padding: 0.8rem;
+  padding: 0.9rem;
   background-color: var(--accent);
-  color: #fff;
+  color: #0f172a;
   border: none;
   border-radius: var(--radius);
   font-weight: 600;
@@ -344,16 +355,17 @@ button[type="submit"]:hover {
   background-color: var(--primary);
 }
 
-/* ========== FOOTER ========== */
+/* ===== FOOTER ===== */
 footer {
   text-align: center;
-  background: var(--card-bg);
+  background: #0f172a;
   color: var(--muted);
-  padding: 1.5rem;
-  border-top: 1px solid #eaeaea;
+  padding: 1.8rem;
+  border-top: 1px solid #1e293b;
+  font-size: 0.9rem;
 }
 
-/* ========== RESPONSIVE ========== */
+/* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
   .navigation {
     display: none;
@@ -361,8 +373,8 @@ footer {
     position: absolute;
     top: 70px;
     right: 0;
-    width: 70%;
-    background: var(--card-bg);
+    width: 75%;
+    background: #1e293b;
     padding: 2rem 1rem;
     box-shadow: -2px 0 10px var(--shadow);
   }
@@ -371,6 +383,5 @@ footer {
   }
   .burger-menu {
     display: block;
-    color: var(--primary);
   }
 }
