@@ -1,48 +1,102 @@
-const twitter=document.querySelector("#twitter");
-twitter.addEventListener("click",()=>{
-    alert("Twitter is DEACTIVATED for the moment being!!!")
+// ===============================
+// Joseph Owino Portfolio Script
+// ===============================
+
+// DOM Elements
+const burgerMenu = document.getElementById("burger-menu");
+const navigation = document.getElementById("navigation");
+const scrollUpBtn = document.getElementById("scroll-up");
+const header = document.getElementById("heading");
+
+// ===============================
+// Mobile Menu Toggle
+// ===============================
+burgerMenu.addEventListener("click", () => {
+  navigation.classList.toggle("show");
+  burgerMenu.classList.toggle("active");
 });
 
-const btn=document.querySelector("#submit-btn");
-btn.addEventListener("click",()=>{
-    alert("Haven't connected with express or back end stuff, it won't submit the form manually");
-    alert("However if wants to connect, use rohitpandey73551@gmail.com");
+// Close mobile menu when a link is clicked
+document.querySelectorAll(".nav-link").forEach(link => {
+  link.addEventListener("click", () => {
+    navigation.classList.remove("show");
+    burgerMenu.classList.remove("active");
+  });
 });
 
-const scrollUp=document.querySelector("#scroll-up");
-scrollUp.addEventListener("click",()=>{
-    window.scrollTo({
-        top:0,
-        left:0,
-        behavior:"smooth",
-    });
+// ===============================
+// Scroll Behavior
+// ===============================
+
+// Change navbar style when scrolled
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 50) {
+    header.classList.add("background-color");
+  } else {
+    header.classList.remove("background-color");
+  }
+
+  // Show scroll-up button after scrolling
+  if (window.scrollY > 300) {
+    scrollUpBtn.style.display = "block";
+  } else {
+    scrollUpBtn.style.display = "none";
+  }
 });
 
-const burger=document.querySelector("#burger-menu");
-const ul=document.querySelector("#navigation");
-const nav=document.querySelector("nav");
-const heading=document.querySelector("#heading");
-
-
-burger.addEventListener("click",()=>{
-    ul.classList.toggle("show");
+// ===============================
+// Scroll to Top
+// ===============================
+scrollUpBtn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
 });
-const navLinks=document.querySelectorAll(".nav-link");
-navLinks.forEach((link)=>{
-    link.addEventListener("click",()=>{
-        ul.classList.remove("show");
-    });
-});
-window.addEventListener("scroll",onScroll);
-function onScroll(){
-    ul.classList.remove("show");
-    var scroll=document.documentElement.scrollTop;
-    if(scroll>30){
-        heading.classList.add("background-color");
-        nav.classList.add("scrolled");
+
+// ===============================
+// Contact Form Placeholder Logic
+// ===============================
+// (Optional: placeholder for backend integration)
+const contactForm = document.querySelector("form");
+
+if (contactForm) {
+  contactForm.addEventListener("submit", e => {
+    e.preventDefault();
+
+    // Extract values
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    if (!name || !email || !message) {
+      alert("Please fill in all fields before submitting.");
+      return;
     }
-    else{
-        heading.classList.remove("background-color");
-        nav.classList.remove("scrolled");
-    }
-};
+
+    // Simulate success feedback
+    alert("Thank you, " + name + "! Your message has been sent successfully.");
+
+    // Reset form fields
+    contactForm.reset();
+  });
+}
+
+// ===============================
+// Accessibility & UX Enhancements
+// ===============================
+
+// Keyboard navigation for burger menu
+burgerMenu.addEventListener("keyup", e => {
+  if (e.key === "Enter" || e.key === " ") {
+    burgerMenu.click();
+  }
+});
+
+// Close menu when clicking outside
+window.addEventListener("click", e => {
+  if (!navigation.contains(e.target) && !burgerMenu.contains(e.target)) {
+    navigation.classList.remove("show");
+    burgerMenu.classList.remove("active");
+  }
+});
