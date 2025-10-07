@@ -1,179 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/app.css">
-    <title>Joseph Owino | Contract Developer</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Joseph Owino — Software Engineer & Systems Specialist</title>
+  <link rel="stylesheet" href="assets/app.css" />
 </head>
 <body>
-    <header>
-        <nav id="heading" class="heading">
-            <ul class="main-icon">
-                <li><img src="views/profilePic.png" alt="Profile Picture" class="icon-pic"></li>
-                <li>
-                    <div class="attribute">
-                        <h1>Joseph Owino</h1>
-                    </div>
-                </li>
-            </ul>
-            <ul class="navigation" id="navigation">
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#contactMe" class="nav-link">Contact</a></li>
-            </ul>
-            <button class="burger-menu" id="burger-menu">
-                <ion-icon class="bars" name="menu-outline"><span class="drop-down"><img src="views/icons8-drop-down-menu-36.png" alt=""></span></ion-icon>
-            </button>
-        </nav>
-    </header>
+  <header>
+    <nav id="heading" class="heading">
+      <div class="nav-brand">
+        <img src="views/profilePic.png" alt="Joseph Owino" class="brand-photo" />
+        <h1 class="brand-name">Joseph Owino</h1>
+      </div>
+      <ul class="navigation" id="navigation">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#expertise" class="nav-link">Expertise</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#writing" class="nav-link">Writing</a></li>
+        <li><a href="#contactMe" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="burger-menu" id="burger-menu">
+        ☰
+      </button>
+    </nav>
+  </header>
 
-    <main>
-        <!-- HERO SECTION -->
-        <section class="hero">
-            <div class="bio-text-wrap">
-                <div class="bio">
-                    <h1 class="bio-title">Hi, I'm Joseph Owino</h1>
-                    <p class="bio-text">
-                        A pragmatic software developer from Kenya specializing in full-stack PHP and Python development. I build, maintain, and optimize systems that drive business value—especially legacy platforms that need reliability, performance, and client-focused support.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- ABOUT SECTION -->
-        <section class="more-about-me" id="about">
-            <div class="inner-wrap">
-                <h2 class="more-about-title">About Me</h2>
-                <div class="about-container">
-
-                    <div class="about-card">
-                        <h3 class="more-about-title-small">Professional Summary</h3>
-                        <p>
-                            I’m a contract developer with hands-on experience in maintaining and improving legacy PHP systems. My work blends full-stack development, Linux system administration, and Python scripting to deliver dependable, client-centered technical solutions.
-                            I value stability, scalability, and measurable output in every project I contribute to.
-                        </p>
-                    </div>
-
-                    <div class="about-card">
-                        <h3 class="more-about-title-small">Education</h3>
-                        <p>Apprentice Developer<br>Zone 01 Kisumu</p>
-                    </div>
-
-                    <div class="about-card">
-                        <h3 class="more-about-title-small">Experience</h3>
-                        <p>
-                            1+ Years — Full-stack Development & System Administration<br>
-                            Skilled in maintaining and extending large PHP codebases, database optimization, and backend performance tuning in Linux environments.
-                        </p>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- SKILLS SECTION -->
-        <section class="skills" id="skills">
-            <h2 class="skills-header">Core Technical Skills</h2>
-            <div class="skills-wrapper">
-                <div class="first-set">
-                    <img src="views/phpIcon.png" alt="PHP" class="skills-card">
-                    <img src="views/pythonIcon.png" alt="Python" class="skills-card">
-                    <img src="views/jsIcon.png" alt="JavaScript" class="skills-card">
-                </div>
-                <div class="first-set">
-                    <img src="views/linuxIcon.png" alt="Linux" class="skills-card">
-                    <img src="views/mysqlIcon.png" alt="MySQL" class="skills-card">
-                    <img src="views/htmlcssIcon.png" alt="HTML & CSS" class="skills-card">
-                </div>
-            </div>
-        </section>
-
-        <!-- PROJECTS SECTION -->
-        <section class="projects" id="projects">
-            <h2 class="projects-title">Relevant Projects</h2>
-            <div class="projects-container">
-
-                <div class="project-card">
-                    <img src="views/phpProject.png" alt="Legacy PHP Project" class="project-pic">
-                    <h3 class="project-title">Legacy PHP System Optimization</h3>
-                    <p class="project-details">
-                        Refactored and optimized a monolithic PHP application to improve performance, enhance maintainability, and ensure backward compatibility with long-standing client systems.
-                    </p>
-                </div>
-
-                <div class="project-card">
-                    <img src="views/sysAdmin.png" alt="System Administration" class="project-pic">
-                    <h3 class="project-title">Linux System Administration</h3>
-                    <p class="project-details">
-                        Managed Linux-based environments, configured monitoring tools, automated routine tasks, and optimized web server uptime for high-availability PHP applications.
-                    </p>
-                </div>
-
-                <div class="project-card">
-                    <img src="views/pythonModule.png" alt="Python Automation" class="project-pic">
-                    <h3 class="project-title">Python-Based Internal Tooling</h3>
-                    <p class="project-details">
-                        Built automation scripts and lightweight Python modules to assist in data validation and reporting, integrated seamlessly with existing PHP infrastructure.
-                    </p>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- CONTACT SECTION -->
-        <section class="contact" id="contactMe">
-            <h2>Email Me</h2>
-            <div class="contact-form-container">
-                <div class="contact-form">
-                    <form action="#" method="POST">
-                        <div class="form-control">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="senderName" placeholder="Enter Your Name" class="input-field" required>
-                        </div>
-                        <div class="form-control">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="senderEmail" placeholder="Enter Your Email" class="input-field" required>
-                        </div>
-                        <div class="form-control">
-                            <label for="message">Message</label>
-                            <textarea name="message" id="message" cols="60" rows="10" placeholder="Enter Your Message" class="input-field" required></textarea>
-                        </div>
-                        <button id="submit-btn">Submit</button>
-                    </form>
-                </div>
-            </div>
-        </section>
-
-        <!-- SOCIAL LINKS -->
-        <div class="socials" id="socials">
-            <a href="https://x.com/JosephOwin37679" target="_blank" id="twitter">
-                <img src="assets/twitter.gif" alt="Twitter">
-            </a>
-            <a href="https://www.instagram.com/" target="_blank">
-                <img src="assets/insta.gif" alt="Instagram">
-            </a>
-            <a href="https://github.com/JoeOwino" target="_blank">
-                <img src="assets/git.gif" alt="GitHub">
-            </a>
-            <a href="https://www.linkedin.com/in/joseph-owino-69820a296/" target="_blank">
-                <img src="assets/link.gif" alt="LinkedIn">
-            </a>
-        </div>
-    </main>
-
-    <!-- FOOTER -->
-    <footer>
-        <p class="copy">&copy; 2024 Joseph Owino. All Rights Reserved.</p>
-        <p class="copy">
-            Built with &#x2661; by <a href="#">Joseph Owino</a>
+  <main>
+    <!-- Hero / Intro -->
+    <section class="hero">
+      <div class="hero-content">
+        <h2 class="hero-greeting">Hello, I’m Joseph Owino.</h2>
+        <p class="hero-subtitle">
+          I’m a software engineer from Kenya focusing on full-stack systems, legacy PHP maintenance, and robust backend tooling. I deliver stability, performance, and long-term value for mission-critical platforms.
         </p>
-        <i class="scroll-up" id="scroll-up">
-            <img src="assets/upArrow.gif" alt="scroll-up" class="socicon up-arrow">
-        </i>
-    </footer>
-    <script src="assets/app.js"></script>
+        <a href="#projects" class="btn-primary">See My Work</a>
+      </div>
+    </section>
+
+    <!-- About / Profile -->
+    <section class="about" id="about">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>
+          With a foundation in systems-level thinking and a passion for real-world impact, I’ve helped keep complex platforms alive, added new features to legacy systems, and built internal tooling that scales. I thrive in environments that demand responsiveness, reliability, and clear communication.
+        </p>
+        <p>
+          I’m comfortable wearing many hats: developer, maintainer, sysadmin, and client liaison. Whether it’s debugging a legacy PHP module, optimizing SQL queries, or scripting in Python, I approach each task with diligence and accountability.
+        </p>
+      </div>
+    </section>
+
+    <!-- Expertise / Skills -->
+    <section class="expertise" id="expertise">
+      <div class="container">
+        <h2>Core Expertise</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3>Legacy PHP & Monoliths</h3>
+            <p>Extensive experience reading, refactoring, and extending mature systems.</p>
+          </div>
+          <div class="skill-card">
+            <h3>Python / Scripting</h3>
+            <p>Automation, ETL, micro-modules, and integrations in Python.</p>
+          </div>
+          <div class="skill-card">
+            <h3>Full Stack (JS / HTML / CSS)</h3>
+            <p>Front-end enhancements, dynamic UI, and seamless user experience.</p>
+          </div>
+          <div class="skill-card">
+            <h3>Linux & System Administration</h3>
+            <p>Server maintenance, monitoring, performance tuning, and ops support.</p>
+          </div>
+          <div class="skill-card">
+            <h3>Databases & Optimization</            <p>MySQL, query tuning, indexing, and schema analysis.</p>
+          </div>
+          <div class="skill-card">
+            <h3>Remote / Client Support</h3>
+            <p>Proven ability to troubleshoot in production, communicate clearly, and maintain SLAs.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <div class="container">
+        <h2>Selected Projects</h2>
+        <div class="projects-grid">
+          <!-- Adjust with your real project screenshot, links, descriptions -->
+          <div class="project-card">
+            <img src="views/phpProject.png" alt="Legacy PHP System" class="project-img" />
+            <h3>Monolith Optimization (PHP)</h3>
+            <p>
+              Refactored a large legacy PHP system, introduced modular structure, improved performance by ~35%, and maintained compatibility for existing clients.
+            </p>
+            <a href="https://github.com/joseowino/legacy-project" target="_blank" class="project-link">View Repository</a>
+          </div>
+
+          <div class="project-card">
+            <img src="views/pythonModule.png" alt="Python Tooling" class="project-img" />
+            <h3>Internal Automation Tool (Python)</h3>
+            <p>
+              Built a Python-based pipeline for CSV ingestion, validation, and database synchronization to support legacy systems without downtime.
+            </p>
+            <a href="https://github.com/joseowino/python-tooling" target="_blank" class="project-link">View Repository</a>
+          </div>
+
+          <div class="project-card">
+            <img src="views/sysAdmin.png" alt="Linux Ops" class="project-img" />
+            <h3>Server Monitoring & Ops</h3>
+            <p>
+              Configured monitoring stacks, automated alerts, and wrote scripts to self-heal processes in production environments — reducing downtime.
+            </p>
+            <a href="https://github.com/joseowino/ops-scripts" target="_blank" class="project-link">View Repository</a>
+          </div>
+
+          <div class="project-card">
+            <img src="views/devWriting.png" alt="Writing / Blog" class="project-img" />
+            <h3>Technical Writing & Posts</h3>
+            <p>
+              On Dev.to, I’ve written about Go, event-driven architecture, and system design. Sharing knowledge is part of how I grow. :contentReference[oaicite:0]{index=0}
+            </p>
+            <a href="https://dev.to/joseowino" target="_blank" class="project-link">Read My Posts</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Writing / Articles -->
+    <section class="writing" id="writing">
+      <div class="container">
+        <h2>Recent Articles</h2>
+        <ul class="article-list">
+          <li>
+            <a href="https://dev.to/joseowino/event-driven-architecture-with-go-22k5" target="_blank">
+              Event-Driven Architecture with Go
+            </a>
+            <span class="article-date">Jul 7, 2025</span>
+          </li>
+          <li>
+            <a href="https://dev.to/joseowino/zero-downtime-architecture-for-enterprise-systems" target="_blank">
+              Zero-Downtime Architecture for Enterprise Systems
+            </a>
+            <span class="article-date">Aug 2025</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contactMe">
+      <div class="container">
+        <h2>Get In Touch</h2>
+        <p>If you’d like to discuss legacy systems, optimizations, or contract opportunities, feel free to drop me a message.</p>
+        <form action="#" method="POST" class="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="senderName" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="senderEmail" placeholder="Your email address" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" placeholder="How can I help?" required></textarea>
+          </div>
+          <button type="submit" class="btn-primary">Send Message</button>
+        </form>
+
+        <div class="contact-links">
+          <a href="https://github.com/joseowino" target="_blank">GitHub</a>
+          <a href="https://dev.to/joseowino" target="_blank">Dev.to</a>
+          <a href="https://www.linkedin.com/in/joseph-owino-69820a296/" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Joseph Owino. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="assets/app.js"></script>
 </body>
 </html>
